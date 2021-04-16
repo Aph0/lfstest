@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model application="storm" uuid="a1a222ab-d482-4f5a-b37e-6dbaa3427486" name="Fluidit Storm Model" crs="EPSG:3857" start-time="2018-01-01T00:00" end-time="2018-01-02T00:00" report-start="2018-01-01T00:00" pattern-start="2021-04-16T12:06:12.482897400" pattern-step="3600" report-step="3600" number-of-steps="0" current-step="0" zero-potential-elevation="0" specific-gravity="1" motor-efficiency="85" vsd-efficiency="95" pump-efficiency="70" time-zone="UTC" units="LPS" surcharge-model="SLOT" friction-model="DW" infiltration-model="HORTON" flow-routing="DYNWAVE" link-offsets="DEPTH" headloss-formula="DW" ignore-rainfall="false" ignore-snowmelt="false" ignore-groundwater="false" ignore-rdii="false" ignore-routing="false" ignore-quality="false" allow-ponding="false" skip-steady-state="false" system-flow-tol="5" lateral-flow-tol="5" dry-days="0" wet-step="PT5M" dry-step="PT1H" routing-step="30" report-averages="false" lengthening-step="0" variable-step="0.5" minimum-step="0.5" inertial-terms="PARTIAL" supercritical-flow="BOTH" min-surface-area="1.1675" min-slope="0" max-trials="8" head-tolerance="0.002" threads="4">
+  <layers>
+    <open-street-map uuid="cd3442c6-5105-4e49-808f-95c82f06d446" name="Open Street Map" extra-zoom="0" gray-scale="false"/>
+  </layers>
+  <schematics/>
+  <gis-schematics/>
+  <external-systems/>
+  <limits>
+    <colors/>
+    <sizes/>
+  </limits>
+  <drawing-states active="0a7b4e76-cfa6-4e69-a7c1-5c2793669c90">
+    <basic-drawing-state uuid="0a7b4e76-cfa6-4e69-a7c1-5c2793669c90" name="Default Visualization" legend-position="NE" legend-width="200" dynamic-width="true" legend-margin="10" legend-xpadding="10" legend-ypadding="4">
+      <visible-layers>
+        <uuid>cd3442c6-5105-4e49-808f-95c82f06d446</uuid>
+      </visible-layers>
+      <visualizers>
+        <symbol uuid="94a1f21f-64d4-48e2-9346-6190a1fabccc" name="Symbols" active="true" exclusive="true" show-in-legend="false" show-count="false" symbol-size="15" symbol-size-in-meters="false"/>
+        <area-label uuid="f02b2f4e-7eec-4c47-8be4-0b8f459496be" name="Label Areas" active="true" exclusive="false" show-in-legend="false" show-count="false" font-color="-1000000" font-size="11" font-bold="false" font-italic="false" font-size-in-meters="false" gap="3" alignment="TOP"/>
+        <line-label uuid="d51948b6-1c17-46b0-82cc-aefbf30a8503" name="Label Lines" active="true" exclusive="false" show-in-legend="false" show-count="false" font-color="-1000000" font-size="11" font-bold="false" font-italic="false" font-size-in-meters="false" gap="3"/>
+        <point-label uuid="af60cbc4-bcbf-4aac-9f41-a7ac677e4314" name="Label Points" active="true" exclusive="false" show-in-legend="false" show-count="false" font-color="-1000000" font-size="11" font-bold="false" font-italic="false" font-size-in-meters="false" gap="3" alignment="TOP"/>
+        <map-label uuid="6e169ddb-72a8-4af8-9b78-5a398c700dcc" name="Map Labels" active="true" exclusive="false" show-in-legend="false" show-count="false" alignment="TOP" font-color="-1000000" font-size="11" font-bold="false" font-italic="false" font-size-in-meters="false" gap="3"/>
+        <outfall-visualizer uuid="46d6084f-f4d6-461f-ae05-e81dc46cae17" name="Outfalls" active="true" exclusive="true" show-in-legend="true" show-count="false" color="-1000000" size="10" size-in-meters="false"/>
+        <basin-visualizer uuid="6e87df7f-7a48-4639-b81d-9fd19ab47742" name="Basin" active="true" exclusive="false" show-in-legend="false" show-count="false" show-basin="true" show-basin-limits="true" basin-depth-from="DEPTH"/>
+        <storageunit-visualizer uuid="005d0bb2-5104-4010-80e5-d0fff114f65b" name="Storage Units" active="true" exclusive="true" show-in-legend="false" show-count="false" size="10" size-in-meters="false" color="-ffff01" stroke-color="-1000000"/>
+        <divider-visualizer uuid="b27305c6-3815-45d7-9b7c-961297c36147" name="Dividers" active="true" exclusive="true" show-in-legend="true" show-count="false" color="-1000000" size="10" size-in-meters="false"/>
+        <junction-visualizer uuid="6ca6492f-721c-4ccb-be71-ead5e5106be9" name="Junctions" active="true" exclusive="true" show-in-legend="true" show-count="false" color="-1000000" point-type="CIRCLE" size="6" size-in-meters="false" stroke-color="-1000000"/>
+        <raingage-visualizer uuid="f3bef485-1c06-4c1c-a0da-5611db341695" name="Rain Gages" active="true" exclusive="true" show-in-legend="false" show-count="false" size="20" size-in-meters="false" color="-ffff01" stroke-color="-1000000"/>
+        <elevation-visualizer uuid="6fec8d65-1517-44fc-bd27-2d518d5629fe" name="Node Elevations" active="true" exclusive="false" show-in-legend="true" show-count="false" color="-1000000"/>
+        <demand-visualizer uuid="cded095d-cb9a-4d18-aa3a-e3b5603d35ec" name="Inflows" active="true" exclusive="true" show-in-legend="false" show-count="false" size="5" size-in-meters="false" color="-378738" stroke-color="-1000000" draw-connector="true" point-type="CIRCLE" important-color="-10000"/>
+        <weir-visualizer uuid="62fa7ab0-7800-40b7-b557-4079faf4cd68" name="Weirs" active="true" exclusive="true" show-in-legend="false" show-count="false" size="10" size-in-meters="false" color="-1" stroke-color="-1000000"/>
+        <orifice-visualizer uuid="93fe704d-7ad8-4063-b4ae-d08dbcc82a07" name="Orifices" active="true" exclusive="true" show-in-legend="false" show-count="false" size="10" size-in-meters="false" color="-1" stroke-color="-1000000"/>
+        <pump-visualizer uuid="b89606f1-4a82-45e9-a0e6-9118e79e1c40" name="Pumps" active="true" exclusive="true" show-in-legend="false" show-count="false" size="4" size-in-meters="false" color="-1" stroke-color="-1000000"/>
+        <outlet-visualizer uuid="96000531-8617-4a61-a9de-6b1885a2d615" name="Outlets" active="true" exclusive="true" show-in-legend="false" show-count="false" size="10" size-in-meters="false" color="-1" stroke-color="-1000000"/>
+        <flood-model-area-visualizer uuid="a1474b90-2f2a-4e47-becb-1aad662c0676" name="Flood Model Areas" active="true" exclusive="true" show-in-legend="false" show-count="false" draw-fill="false" draw-stroke="true" fill-color="-ffff01" stroke-color="-ffff01"/>
+        <conduit-visualizer uuid="55bc14d6-5862-41b8-9d5c-b88856be49be" name="Conduits" active="true" exclusive="true" show-in-legend="true" show-count="false" color="-1000000" line-width="1" width-in-meters="false" line-style="SOLID" arrow-size="4" arrow-size-in-meters="false" arrow-proportional="true" arrow-direction="NET" show-symbols="true"/>
+        <catchment-visualizer uuid="441c69dc-94ec-45cc-965b-64097cb033a0" name="Catchments" active="true" exclusive="true" show-in-legend="true" show-count="false" color="-1000000" draw-connector="true" draw-centroid="true" draw-fill="true" draw-stroke="true"/>
+        <weatherstation-visualizer uuid="64705a6b-1205-4dfa-bccc-3b130eb81721" name="Weather Stations" active="true" exclusive="true" show-in-legend="false" show-count="false" size="20" size-in-meters="false" color="-ffff01" stroke-color="-1000000"/>
+        <point uuid="4f04dc3f-9ce6-43f7-b3f4-27bbada22b54" name="Point Components" active="false" exclusive="true" show-in-legend="false" show-count="false" size="6" size-in-meters="false" color="-1000000" stroke-color="-1000000" point-type="CIRCLE"/>
+        <line uuid="3537c2bb-b5d6-4835-b0e3-60db567bc91c" name="Line Components" active="false" exclusive="true" show-in-legend="false" show-count="false" color="-1000000" line-width="1" width-in-meters="false" line-style="SOLID"/>
+        <area uuid="3b3261a0-0d87-4106-a0d8-9e39750d0d57" name="Area Components" active="false" exclusive="true" show-in-legend="false" show-count="false" draw-fill="true" draw-stroke="true" fill-color="-1000000" stroke-color="-1000000"/>
+      </visualizers>
+    </basic-drawing-state>
+  </drawing-states>
+  <component-namer total="60">
+    <counts>
+      <count class="fi.fluidit.model.Node" count="31"/>
+      <count class="fi.fluidit.model.Link" count="30"/>
+    </counts>
+  </component-namer>
+  <default-values/>
+  <dem-manager uuid="12e7f959-dfa1-4848-a1f7-5bcbcbc1adaf" name="">
+    <children/>
+  </dem-manager>
+  <components/>
+  <scenarios active="d3c3469d-99fa-45f3-953c-1840f1eec7a1">
+    <scenario uuid="d3c3469d-99fa-45f3-953c-1840f1eec7a1" name="Base Scenario">
+      <component-namer total="1">
+        <counts/>
+      </component-namer>
+    </scenario>
+  </scenarios>
+</model>
